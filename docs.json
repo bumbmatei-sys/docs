@@ -52,7 +52,8 @@
           "giving/how-giving-works",
           "giving/payment-links",
           "giving/recording-a-gift",
-          "giving/fundraising-and-statements"
+          "giving/fundraising-and-statements",
+          "giving/accounting"
         ]
       },
       {
@@ -61,7 +62,8 @@
         "pages": [
           "ministry/service-planning",
           "ministry/events",
-          "ministry/forms-and-signups"
+          "ministry/forms-and-signups",
+          "ministry/livestream"
         ]
       },
       {
@@ -69,7 +71,8 @@
         "icon": "mobile-screen",
         "pages": [
           "member-app/overview",
-          "account/data-and-privacy"
+          "account/data-and-privacy",
+          "member-app/ask-harvest"
         ]
       }
     ]
