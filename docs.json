@@ -17,6 +17,61 @@
           "quickstart"
         ]
       }
+    ],
+    "groups": [
+      {
+        "group": "Getting started",
+        "icon": "rocket",
+        "pages": [
+          "index",
+          "getting-started/set-up-your-church",
+          "getting-started/plans-and-billing"
+        ]
+      },
+      {
+        "group": "Your church",
+        "icon": "users",
+        "pages": [
+          "your-church/roles-and-permissions",
+          "your-church/people-and-contacts",
+          "your-church/branding"
+        ]
+      },
+      {
+        "group": "Content",
+        "icon": "pen-nib",
+        "pages": [
+          "content/courses",
+          "content/blog-and-community"
+        ]
+      },
+      {
+        "group": "Giving",
+        "icon": "hand-holding-heart",
+        "pages": [
+          "giving/how-giving-works",
+          "giving/payment-links",
+          "giving/recording-a-gift",
+          "giving/fundraising-and-statements"
+        ]
+      },
+      {
+        "group": "Ministry",
+        "icon": "church",
+        "pages": [
+          "ministry/service-planning",
+          "ministry/events",
+          "ministry/forms-and-signups"
+        ]
+      },
+      {
+        "group": "For your congregation",
+        "icon": "mobile-screen",
+        "pages": [
+          "member-app/overview",
+          "account/data-and-privacy"
+        ]
+      }
     ]
   },
   "logo": {
