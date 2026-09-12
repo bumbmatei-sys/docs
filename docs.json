@@ -33,8 +33,10 @@
         "icon": "users",
         "pages": [
           "your-church/roles-and-permissions",
+          "your-church/dashboard",
           "your-church/people-and-contacts",
-          "your-church/branding"
+          "your-church/branding",
+          "your-church/groups-and-campuses"
         ]
       },
       {
@@ -42,7 +44,8 @@
         "icon": "pen-nib",
         "pages": [
           "content/courses",
-          "content/blog-and-community"
+          "content/blog-and-community",
+          "content/notes-and-documents"
         ]
       },
       {
@@ -53,7 +56,8 @@
           "giving/payment-links",
           "giving/recording-a-gift",
           "giving/fundraising-and-statements",
-          "giving/accounting"
+          "giving/accounting",
+          "giving/pledges"
         ]
       },
       {
