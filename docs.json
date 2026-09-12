@@ -78,7 +78,8 @@
         "icon": "life-ring",
         "pages": [
           "help/troubleshooting",
-          "help/getting-help"
+          "help/getting-help",
+          "help/glossary"
         ]
       }
     ]
