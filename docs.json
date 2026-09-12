@@ -11,15 +11,6 @@
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "groups": [
-      {
         "group": "Getting started",
         "icon": "rocket",
         "pages": [
@@ -79,6 +70,14 @@
           "account/data-and-privacy",
           "member-app/installing",
           "member-app/ask-harvest"
+        ]
+      },
+      "changelog",
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
         ]
       }
     ]
