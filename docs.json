@@ -77,7 +77,8 @@
         "group": "Help",
         "icon": "life-ring",
         "pages": [
-          "help/troubleshooting"
+          "help/troubleshooting",
+          "help/getting-help"
         ]
       }
     ]
