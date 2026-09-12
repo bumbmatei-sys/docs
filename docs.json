@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Harvest",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#B8962E",
+    "light": "#D4B155",
+    "dark": "#8C701F"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -18,20 +18,70 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "groups": [
+      {
+        "group": "Getting started",
+        "icon": "rocket",
+        "pages": [
+          "index",
+          "getting-started/set-up-your-church",
+          "getting-started/plans-and-billing"
+        ]
+      },
+      {
+        "group": "Your church",
+        "icon": "users",
+        "pages": [
+          "your-church/roles-and-permissions",
+          "your-church/dashboard",
+          "your-church/people-and-contacts",
+          "your-church/branding",
+          "your-church/groups-and-campuses"
+        ]
+      },
+      {
+        "group": "Content",
+        "icon": "pen-nib",
+        "pages": [
+          "content/courses",
+          "content/blog-and-community",
+          "content/notes-and-documents"
+        ]
+      },
+      {
+        "group": "Giving",
+        "icon": "hand-holding-heart",
+        "pages": [
+          "giving/how-giving-works",
+          "giving/payment-links",
+          "giving/recording-a-gift",
+          "giving/fundraising-and-statements",
+          "giving/accounting",
+          "giving/pledges"
+        ]
+      },
+      {
+        "group": "Ministry",
+        "icon": "church",
+        "pages": [
+          "ministry/service-planning",
+          "ministry/events",
+          "ministry/forms-and-signups",
+          "ministry/check-in",
+          "ministry/livestream"
+        ]
+      },
+      {
+        "group": "For your congregation",
+        "icon": "mobile-screen",
+        "pages": [
+          "member-app/overview",
+          "account/data-and-privacy",
+          "member-app/installing",
+          "member-app/ask-harvest"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -40,14 +90,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://theharvest.app",
+        "label": "Open Harvest"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Start free",
+      "href": "https://theharvest.site"
     }
   },
   "contextual": {
@@ -64,9 +114,14 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://theharvest.site"
     }
+  },
+  "description": "Harvest is the digital foundation for churches and ministries — one place for your people, your content, your giving and your Sunday.",
+  "appearance": {
+    "default": "light"
+  },
+  "seo": {
+    "indexing": "navigable"
   }
 }
