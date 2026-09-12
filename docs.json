@@ -72,14 +72,7 @@
           "member-app/ask-harvest"
         ]
       },
-      "changelog",
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
+      "changelog"
     ]
   },
   "logo": {
