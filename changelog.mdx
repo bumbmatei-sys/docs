@@ -3,6 +3,51 @@ title: "What's new"
 description: "Everything we have shipped, newest first."
 ---
 
+<Update label="14 September 2026" tags={["Giving","Fixed"]}>
+  ## A \$50 gift was showing as \$5,000
+
+  Three charts on your dashboard multiplied every giving figure by a hundred — Giving & growth, Giving over time, and the Giving mix tooltip. The legend beside that last one showed the right number, two elements away from the wrong one.
+
+  **Fixed.** Every money figure on the dashboard now reads correctly.
+</Update>
+
+<Update label="14 September 2026" tags={["Accounting","Fixed"]}>
+  ## Two screens were telling you something untrue about your own money
+
+  Accounting and Giving statements both said that a gift you record in the CRM does not count towards their totals and will not reach a member's statement.
+
+  **That has been false since we made manual recording write a real receipt.** Three other screens in Harvest already said it counts. These two said the opposite, and nobody noticed.
+
+  **Both now say what actually happens:** a gift you record by hand reaches your accounting, your dashboard and that member's year-end statement, exactly like a card gift.
+
+  <Warning>
+    Proving that turned up something nobody knew: **a gift recorded against a contact with no email address can never appear on a giving statement.** Statements are grouped by email, so there is nobody to group it under — it is skipped.
+
+    It still counts in your books. Both screens now say so, and it is worth an audit before you tell your congregation their statements are ready.
+  </Warning>
+</Update>
+
+<Update label="14 September 2026" tags={["CRM","Fixed"]}>
+  ## Deleting a contact did nothing
+
+  A contact you deleted came straight back on the next refresh. The delete was aiming at the wrong record entirely for anyone who had a Harvest account, so it was quietly writing to a document that had never existed.
+
+  **Fixed** — and while we were there:
+
+  - **Deleting a contact now removes their activity timeline too**, instead of leaving it behind with nothing to attach to.
+  - **Your receipts are never deleted.** Accounting and giving statements do not move when a contact goes.
+  - **An admin can no longer delete their own account**, which previously had no guard at all. You could have locked yourself out of a church you were the only admin of.
+  - **A failed delete now says so** instead of closing the dialog as though it had worked.
+
+  The confirmation dialog also explains what deleting actually reaches, rather than only warning that it cannot be undone.
+</Update>
+
+<Update label="14 September 2026" tags={["Livestream","Fixed"]}>
+  ## The support button during a livestream went nowhere
+
+  It opened a second tab onto your app's home page. **Now it goes to your giving page**, and it is hidden entirely if you do not have one.
+</Update>
+
 <Update label="11 September 2026" tags={["Events", "Giving"]}>
 ## Paying for an event actually works
 
