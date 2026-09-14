@@ -1,0 +1,145 @@
+---
+title: "The money flow"
+description: "Every way money reaches Harvest, and exactly where it lands."
+---
+
+Harvest never touches your money. Everything below is a record of money that arrived somewhere else — your PayPal, your Revolut, your bank.
+
+This page is the whole picture in one place: what starts a record, who has to do something, and what moves when they do.
+
+## The one rule
+
+<Warning>
+  **Nothing counts until somebody records it.**
+
+  A gift sitting in your PayPal that nobody has entered does not exist as far as Harvest is concerned. Your dashboard, your books, your campaign bars and your members' giving statements are all built from what was recorded, not from what was received.
+</Warning>
+
+Everything else on this page follows from that.
+
+## Two ways money gets recorded
+
+<CardGroup cols={2}>
+  <Card title="You record a gift" icon="pen">
+    Somebody gave through one of your payment links. You enter it on their contact.
+  </Card>
+
+  <Card title="You confirm an event payment" icon="ticket">
+    Somebody paid for a ticket and pressed **I've paid**. You check your account and confirm.
+  </Card>
+</CardGroup>
+
+**Both do the same thing underneath.** One press or one save, and the same places update.
+
+## What updates, every time
+
+| Where | What appears |
+| --- | --- |
+| **Your dashboard** | The giving total moves immediately |
+| **Accounting** | An invoice, with a receipt number |
+| **The member's account** | The gift in their giving history, with a downloadable receipt |
+| **Their giving statement** | In the right year, automatically |
+| **The CRM** | A donation activity on their contact |
+
+You enter it once. There is no second place to update afterwards.
+
+## Recording a gift
+
+<Steps>
+  <Step title="Open the contact">
+    CRM, find the person, open their record.
+  </Step>
+
+  <Step title="Add Activity, choose Donation">
+    Enter the amount and a description.
+  </Step>
+
+  <Step title="Save">
+    Done. Everything above is now correct.
+  </Step>
+</Steps>
+
+Full detail on [Recording a gift](/giving/recording-a-gift).
+
+## Confirming an event payment
+
+<Steps>
+  <Step title="The claim arrives in your inbox">
+    Top right. You are emailed too.
+  </Step>
+
+  <Step title="Check your own payment account">
+    Find the payment by the reference code the attendee was told to use.
+  </Step>
+
+  <Step title="Press Confirm">
+    The attendee gets their QR code, and the same places update.
+  </Step>
+</Steps>
+
+Full detail on [Events](/ministry/events).
+
+## The email is what makes a gift visible to the giver
+
+<Warning>
+  A gift is matched to a member **by email address**.
+
+  If you record a gift against a contact with no email, or with a different email from the one they sign in with: **your dashboard and your books are still right**, but the member will never see it and it will not appear on their giving statement.
+</Warning>
+
+Harvest tells you this on screen before you save. It is the single most common cause of *"why can't I see my giving?"*
+
+<Tip>
+  Worth an audit every December. Any contact with recorded gifts and no email address is a person who will ask you about their statement.
+</Tip>
+
+## What happens when there is no contact
+
+Somebody can register for a public event without ever being in your CRM — which is normal for outreach.
+
+If you confirm their payment and no contact exists with that email, **the invoice is still created and the money still counts**. No CRM activity is written, because there is no contact to write it on.
+
+<Note>
+  Harvest does not create contacts from public event registrations. That would fill your CRM with people who attended once, and spend your plan's contact allowance doing it.
+
+  If you want somebody in your CRM, add them.
+</Note>
+
+## Gifts are never counted twice
+
+The invoice is the money record. The CRM activity points at it rather than carrying the amount again.
+
+This matters if you are reconciling: **summing the donation activities in your CRM will not give you your giving total.** Accounting and your dashboard are the figures to trust.
+
+## A weekly rhythm
+
+<Steps>
+  <Step title="Open your payment accounts">
+    Whatever you use — PayPal, Revolut, Wise.
+  </Step>
+
+  <Step title="Compare against your Harvest total">
+    Anything in your account and not in Harvest is a gift nobody recorded.
+  </Step>
+
+  <Step title="Record the gap">
+    Ten minutes, once a week.
+  </Step>
+</Steps>
+
+<Tip>
+  Weekly is the difference between a dashboard you trust and a number you have to apologise for. Monthly, you will have forgotten who half the payments were from. Annually, it is a day's work and some of it is guesswork.
+</Tip>
+
+**During a campaign, record daily.** Giving is heaviest exactly when admin time is shortest, and the progress bar is the reason the campaign exists.
+
+## What Harvest cannot do
+
+- **See a payment arrive.** No webhook, no notification, no balance.
+- **Verify that a payment was made.** You confirm; Harvest records what you said.
+- **Refund anyone.** Your payment provider does that.
+- **Chase an unpaid pledge.** Harvest shows you the gap. The conversation is yours.
+
+<Warning>
+  If money is missing, late or disputed, **your payment provider is the only one who can look**. Harvest holds a record of what somebody typed, not a record of what moved.
+</Warning>

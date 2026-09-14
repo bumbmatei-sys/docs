@@ -22,7 +22,7 @@ yourchurch.theharvest.app/event/abc123
 Anyone can register from that link — no Harvest account needed — which matters for outreach, where most attendees are not members yet.
 
 <Warning>
-  That link and QR code may end up on printed flyers. It does not change once published, so print with confidence, but pick your church address carefully at setup.
+  That link and QR code may end up on printed flyers. It does not change once published, so print with confidence, but pick your address carefully at setup.
 </Warning>
 
 ## Ticket types and capacity
@@ -31,46 +31,79 @@ Add ticket types — adult, child, concession — each with its own capacity. Wh
 
 Discount codes work across ticket types.
 
+## Free events
+
+Nothing below applies. Somebody registers, gets their ticket and QR code immediately, and you scan them at the door.
+
 ## Paid events
 
-Harvest does not process card payments, so paid events work like the rest of [giving](/giving/how-giving-works): your church collects the money and confirms it.
+Harvest does not process card payments, so paid events work like the rest of [giving](/giving/how-giving-works): **you collect the money, and you confirm it.**
+
+The full flow, including what happens in your CRM and your books, is on [The money flow](/giving/the-money-flow).
+
+### Choosing who takes the payment
+
+When you create a paid event you pick which of your [payment links](/giving/payment-links) apply to it. You might take conference tickets through Revolut only, and general giving through everything.
 
 ### What the attendee does
 
 <Steps>
   <Step title="They register">
-    Immediately, as **unpaid**. They get their ticket code straight away.
+    Immediately, as **unpaid**. Their place is held.
   </Step>
 
   <Step title="They pay you directly">
-    Through whichever of your payment links you chose for this event, putting the **reference code** in the payment note.
+    Through one of the payment links you chose, putting the **reference code** in the payment note. That code is how you match their payment to their ticket.
   </Step>
 
   <Step title="They press I've paid">
-    This confirms nothing. It tells your church to go and look.
+    This confirms nothing. It asks you to go and look.
   </Step>
 </Steps>
 
+### No QR code until you confirm
+
+<Warning>
+  On a paid ticket, the QR code and the ticket code are **withheld until you mark the payment received**. The attendee sees that their place is held and that the code comes once you have confirmed.
+
+  This is deliberate: a scannable ticket that nobody has paid for is a ticket that can be screenshotted and forwarded.
+</Warning>
+
+A **free** ticket shows its QR immediately — there is nothing to confirm.
+
 ### What you do
 
-The claim appears in your **inbox**, top right. Open your own payment account, find the payment by its reference, and only then press **Confirm**.
+The claim appears in your **inbox**, top right. You are also emailed, so you are not expected to sit watching it.
 
-Confirming records the payment, creates the invoice and updates your dashboard — exactly like [recording a gift](/giving/recording-a-gift).
+<Steps>
+  <Step title="Open your own payment account">
+    PayPal, Revolut, Wise — wherever you told them to pay.
+  </Step>
+  <Step title="Find the payment by its reference code">
+    The attendee was asked to put it in the payment note.
+  </Step>
+  <Step title="Press Confirm">
+    Only then.
+  </Step>
+</Steps>
+
+### What confirming does
+
+One press does four things:
+
+- **Issues the QR code** to the attendee
+- **Creates the invoice** in [accounting](/giving/accounting)
+- **Adds a donation activity** to that person's contact in the CRM, naming the event
+- **Moves your dashboard**
 
 <Note>
-  You are notified by email when someone claims they have paid, so you are not expected to sit watching the inbox.
+  Confirming twice does not charge or record anything twice. One invoice, one activity, however many times it is pressed.
 </Note>
-
-### Nobody is turned away at the door
-
-<Card title="Check-in never blocks on payment" icon="door-open">
-  Somebody pays on Friday, nobody confirms until Sunday, and they arrive with a ticket reading unpaid. **Let them in.** Check-in shows the unconfirmed flag to your volunteer and waves them through. Sort the money afterwards.
-</Card>
 
 ### Harvest verifies nothing
 
 <Warning>
-  Your church confirms payments. Harvest records what your church says.
+  You confirm payments. Harvest records what you say.
 
   If an attendee disputes a payment later, **your payment account is the truth**, not Harvest.
 </Warning>
@@ -78,3 +111,17 @@ Confirming records the payment, creates the invoice and updates your dashboard �
 ## Check-in
 
 On the day, scan tickets or search by name. Attendance is recorded per person, and you can export the whole list as a CSV.
+
+### Check-in never blocks on payment
+
+<Card title="An unconfirmed guest can still be checked in" icon="door-open">
+  Somebody pays on Friday, nobody confirms until Sunday, and they arrive with a ticket still reading unpaid.
+
+  Your volunteer can find them by name and check them in regardless. Harvest does not stop it.
+</Card>
+
+<Tip>
+  Decide your own door policy and tell your volunteers what it is. Harvest will not decide it for you, and it does not tell attendees what to expect at your door.
+</Tip>
+
+See [Check-in](/ministry/check-in) for the rest.
