@@ -1,0 +1,106 @@
+---
+title: "Troubleshooting"
+description: "The things churches run into most, and what is actually going on."
+---
+
+Most of what goes wrong in Harvest has the same root: **Harvest only knows what somebody has recorded.** If a number looks wrong, start here.
+
+## "My dashboard says $0 and I know people gave"
+
+**Almost certainly the gifts have not been recorded.**
+
+Harvest never sees your congregation's payments — they go straight to your PayPal, Revolut or Wise. Nothing appears in Harvest until somebody enters it.
+
+<Steps>
+  <Step title="Open your payment account">
+    See what actually arrived.
+  </Step>
+
+  <Step title="Record each gift">
+    CRM → open the contact → **Add Activity** → **Donation**. [Full instructions](/giving/recording-a-gift).
+  </Step>
+
+  <Step title="Check the dashboard again">
+    It moves immediately.
+  </Step>
+</Steps>
+
+<Tip>
+  Doing this weekly takes a few minutes. Doing it in January takes a day, and you will have forgotten who half the payments were from.
+</Tip>
+
+## "A member says their giving history is empty"
+
+**The gift was almost certainly recorded against a contact with no email, or a different email.**
+
+Harvest matches a gift to a member **by email address**. The gift still counts for your church — your dashboard and your books are right — but the member cannot see it and it will not reach their year-end statement.
+
+**To fix it:** open that contact, add the email address they actually sign in with, and the history fills in.
+
+<Warning>
+  Worth a check every December, before you tell your congregation their statements are ready.
+</Warning>
+
+## "Someone signed up but I cannot find them"
+
+**They probably signed up at the wrong address.**
+
+Members must create their account at **your** church's address — `yourchurch.theharvest.app`. Someone who signs up on the main Harvest site, or on a different church's address, is not connected to you.
+
+Ask them to sign up again at your address.
+
+## "My campaign progress bar will not move"
+
+Same cause as the dashboard. A [campaign](/giving/fundraising-and-statements) counts **recorded** gifts, and during a big push giving is heaviest exactly when admin time is shortest.
+
+**Record daily during a campaign.** The bar is the reason the campaign exists.
+
+## "Somebody paid for an event but it still says unpaid"
+
+That is expected until you confirm it.
+
+The attendee pays you directly and presses **I've paid**. That lands in your [inbox](/ministry/events), top right. You check your own account for the reference code, then press **Confirm**.
+
+<Note>
+  **Let them in anyway.** Check-in never blocks on payment, and a guest who paid on Friday should not be turned away on Sunday because nobody opened the inbox. See [Check-in](/ministry/check-in).
+</Note>
+
+## "A list is showing fewer people than I have"
+
+If a list is longer than Harvest loads at once, it says so on screen — *"Showing N — this list is incomplete"*.
+
+Use search and filters to narrow down, or export for the full set. The counts above the list are always exact even when the list itself is capped.
+
+## "I cannot find a feature I know exists"
+
+Two likely reasons:
+
+<CardGroup cols={2}>
+  <Card title="Your plan does not include it" icon="lock">
+    Harvest **hides** what your plan does not include rather than showing it locked. Check [Plans and limits](/getting-started/plans-and-billing).
+  </Card>
+
+  <Card title="Your permissions do not include it" icon="user-shield">
+    A group with no permitted tabs is omitted entirely for that admin. Check [Roles and permissions](/your-church/roles-and-permissions).
+  </Card>
+</CardGroup>
+
+## "I hit a plan limit"
+
+Harvest tells you at the moment you hit it. Some limits can be raised without changing plan — contact packs, admin seats and campuses are all [add-ons](/getting-started/plans-and-billing#add-ons).
+
+If you went over a limit by downgrading, **you keep what you have**. You just cannot add more until you are under the cap.
+
+## "A volunteer did not get their rota invitation"
+
+Invitations go by email. Check:
+
+- The email address on their contact record
+- Their spam folder — the sender shows as your church's name via Harvest
+- That the rota was actually sent, not just filled in
+
+The accept link needs no account and no sign-in, so they can answer from any device.
+
+## Still stuck?
+
+[Get in touch](/help/getting-help) — and read that page first, because what you include decides how fast this gets solved.

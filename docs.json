@@ -70,10 +70,20 @@
           "member-app/overview",
           "account/data-and-privacy",
           "member-app/installing",
+          "member-app/prayer",
           "member-app/ask-harvest"
         ]
       },
-      "changelog"
+      "changelog",
+      {
+        "group": "Help",
+        "icon": "life-ring",
+        "pages": [
+          "help/troubleshooting",
+          "help/getting-help",
+          "help/glossary"
+        ]
+      }
     ]
   },
   "logo": {
