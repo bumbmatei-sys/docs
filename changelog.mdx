@@ -3,6 +3,45 @@ title: "What's new"
 description: "Everything we have shipped, newest first."
 ---
 
+<Update label="15 September 2026" tags={["Design","Fixed"]}>
+  ## Your logo disappeared on the dark theme
+
+  Ten screens show your church's logo. Only two of them handled a dark background — so on the other eight, a church with a dark-ink logo showed almost nothing.
+
+  Seven of those eight were the pages your congregation and the public actually see: giving, pledges, campaigns, event registration, check-in, forms and the calendar. **None of them forces light mode**, so a visitor with dark mode switched on saw a near-black logo on a near-black page.
+
+  **Fixed.** Every surface now puts a subtle plate behind an uploaded logo when the page is dark, and paints nothing at all in light mode.
+</Update>
+
+<Update label="15 September 2026" tags={["Forms"]}>
+  ## Rating and scale questions on forms
+
+  You can now ask "how would you rate this, 1 to 5" — as stars, or as a numbered scale.
+
+  <Note>
+    An unanswered rating exports as **empty**, never as zero. A zero is a rating, and averaging a column of accidental zeroes is how a survey ends up looking far worse than it was.
+  </Note>
+
+  Answers export as numbers, so a column can be averaged or charted without anyone converting "4 stars" back into a 4.
+</Update>
+
+<Update label="15 September 2026" tags={["Plans","Fixed"]}>
+  ## Adding a second campus told you to buy the wrong thing
+
+  A church at its campus limit was told to upgrade to Ministry. **Ministry does not include a second campus** — every plan includes exactly one, and extra campuses are an add-on on every tier. So the advice pointed at a purchase that would not have helped.
+
+  The button was also unpressable on a phone, so on touch nothing happened at all.
+
+  **Both fixed.** The message now names the actual cost and offers the add-on.
+</Update>
+
+<Update label="15 September 2026" tags={["Fixed"]}>
+  ## Your profile photo, and a button that flickered
+
+  - **The header showed your initial instead of your photo.** There are two places a photo can live, and the header was reading the wrong one. It looked intermittent because signing in with Google filled both — but anyone who uploaded a photo directly saw a letter forever.
+  - **The Automate button on the blog appeared, vanished and came back** while your plan was still loading. A plan that has not loaded yet is not the same as a plan that does not include something, and Harvest was treating it as a refusal.
+</Update>
+
 <Update label="14 September 2026" tags={["Giving","Fixed"]}>
   ## A \$50 gift was showing as \$5,000
 
