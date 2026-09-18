@@ -16,3 +16,298 @@ description: "Everything we have shipped, newest first."
 
   Unlimited contacts remains an add-on, Ministry only. Extra admin seats still stack. Ask Harvest is still an add-on, on any paid plan — it is not included in Ministry.
 </Update>
+
+<Update label="15 September 2026" tags={["Design","Fixed"]}>
+  ## Your logo disappeared on the dark theme
+
+  Ten screens show your church's logo. Only two of them handled a dark background — so on the other eight, a church with a dark-ink logo showed almost nothing.
+
+  Seven of those eight were the pages your congregation and the public actually see: giving, pledges, campaigns, event registration, check-in, forms and the calendar. **None of them forces light mode**, so a visitor with dark mode switched on saw a near-black logo on a near-black page.
+
+  **Fixed.** Every surface now puts a subtle plate behind an uploaded logo when the page is dark, and paints nothing at all in light mode.
+</Update>
+
+<Update label="15 September 2026" tags={["Forms"]}>
+  ## Rating and scale questions on forms
+
+  You can now ask "how would you rate this, 1 to 5" — as stars, or as a numbered scale.
+
+  <Note>
+    An unanswered rating exports as **empty**, never as zero. A zero is a rating, and averaging a column of accidental zeroes is how a survey ends up looking far worse than it was.
+  </Note>
+
+  Answers export as numbers, so a column can be averaged or charted without anyone converting "4 stars" back into a 4.
+</Update>
+
+<Update label="15 September 2026" tags={["Plans","Fixed"]}>
+  ## Adding a second campus told you to buy the wrong thing
+
+  A church at its campus limit was told to upgrade to Ministry. **Ministry does not include a second campus** — every plan includes exactly one, and extra campuses are an add-on on every tier. So the advice pointed at a purchase that would not have helped.
+
+  The button was also unpressable on a phone, so on touch nothing happened at all.
+
+  **Both fixed.** The message now names the actual cost and offers the add-on.
+</Update>
+
+<Update label="15 September 2026" tags={["Fixed"]}>
+  ## Your profile photo, and a button that flickered
+
+  - **The header showed your initial instead of your photo.** There are two places a photo can live, and the header was reading the wrong one. It looked intermittent because signing in with Google filled both — but anyone who uploaded a photo directly saw a letter forever.
+  - **The Automate button on the blog appeared, vanished and came back** while your plan was still loading. A plan that has not loaded yet is not the same as a plan that does not include something, and Harvest was treating it as a refusal.
+</Update>
+
+<Update label="14 September 2026" tags={["Giving","Fixed"]}>
+  ## A \$50 gift was showing as \$5,000
+
+  Three charts on your dashboard multiplied every giving figure by a hundred — Giving & growth, Giving over time, and the Giving mix tooltip. The legend beside that last one showed the right number, two elements away from the wrong one.
+
+  **Fixed.** Every money figure on the dashboard now reads correctly.
+</Update>
+
+<Update label="14 September 2026" tags={["Accounting","Fixed"]}>
+  ## Two screens were telling you something untrue about your own money
+
+  Accounting and Giving statements both said that a gift you record in the CRM does not count towards their totals and will not reach a member's statement.
+
+  **That has been false since we made manual recording write a real receipt.** Three other screens in Harvest already said it counts. These two said the opposite, and nobody noticed.
+
+  **Both now say what actually happens:** a gift you record by hand reaches your accounting, your dashboard and that member's year-end statement, exactly like a card gift.
+
+  <Warning>
+    Proving that turned up something nobody knew: **a gift recorded against a contact with no email address can never appear on a giving statement.** Statements are grouped by email, so there is nobody to group it under — it is skipped.
+
+    It still counts in your books. Both screens now say so, and it is worth an audit before you tell your congregation their statements are ready.
+  </Warning>
+</Update>
+
+<Update label="14 September 2026" tags={["CRM","Fixed"]}>
+  ## Deleting a contact did nothing
+
+  A contact you deleted came straight back on the next refresh. The delete was aiming at the wrong record entirely for anyone who had a Harvest account, so it was quietly writing to a document that had never existed.
+
+  **Fixed** — and while we were there:
+
+  - **Deleting a contact now removes their activity timeline too**, instead of leaving it behind with nothing to attach to.
+  - **Your receipts are never deleted.** Accounting and giving statements do not move when a contact goes.
+  - **An admin can no longer delete their own account**, which previously had no guard at all. You could have locked yourself out of a church you were the only admin of.
+  - **A failed delete now says so** instead of closing the dialog as though it had worked.
+
+  The confirmation dialog also explains what deleting actually reaches, rather than only warning that it cannot be undone.
+</Update>
+
+<Update label="14 September 2026" tags={["Livestream","Fixed"]}>
+  ## The support button during a livestream went nowhere
+
+  It opened a second tab onto your app's home page. **Now it goes to your giving page**, and it is hidden entirely if you do not have one.
+</Update>
+
+<Update label="11 September 2026" tags={["Events", "Giving"]}>
+## Paying for an event actually works
+
+If your church took ticket payments, the registration page was not showing your payment links — so people registered and then had no way to pay you.
+
+**Now:** the page shows the payment links you chose for that event, gives the attendee a reference code to put in the payment note, and lets them tell you they have paid. That claim lands in your inbox, and you confirm it after checking your own account.
+
+This works for anyone with the link — they do not need a Harvest account, which matters for outreach where most people are not members yet.
+
+We also removed old wording that promised to send people to a payment page that no longer existed.
+</Update>
+
+<Update label="10 September 2026" tags={["Giving", "Accounting"]}>
+## A gift you record now counts everywhere
+
+Recording a donation in the CRM used to update the CRM and nothing else. Your dashboard did not move and your books did not know about it.
+
+**Now:** one entry updates your dashboard, creates the invoice in accounting, appears in that member's own giving history, and lands on their year-end statement. You enter it once.
+
+<Warning>
+  Gifts are matched to a member by their email address. If a contact has no email, the gift still counts for your church but the member will never see it. Harvest now tells you this on screen before you save.
+</Warning>
+</Update>
+
+<Update label="10 September 2026" tags={["Accounts", "Fixed"]}>
+## People could join your church and be invisible
+
+Someone signing up on certain setups ended up connected to no church at all. They could not be found in your CRM, could not post a prayer request and could not see your blog — with nothing on screen to say anything was wrong.
+
+**Fixed.** Harvest now refuses the sign-up loudly instead of quietly creating an account that belongs nowhere.
+</Update>
+
+<Update label="10 September 2026" tags={["Messages", "Fixed"]}>
+## The member chat holds still
+
+The message box used to drift up and down as you scrolled, and half of it sat behind the bottom menu.
+
+**Now:** it stays pinned to the bottom of a conversation, and the bottom menu gets out of the way while you are reading a thread.
+
+Admins also get the full attachment menu here — notes, contacts, fundraising and forms, with search across all four — rather than forms only. Members do not see the paperclip.
+</Update>
+
+<Update label="10 September 2026" tags={["Fixed"]}>
+## Fixes from a week of testing on a phone
+
+- **The blog page crashed** for some churches. Fixed.
+- **The map zoomed out** far enough to show the world three times over. Now bounded.
+- **A course you adopted and later lost** kept eating one of your plan's course slots. Fixed.
+- **The List and Month buttons** on events were the wrong size and misaligned.
+- **Notes** moved its menu to three dots, added share-on-web with a link you can revoke, and the expand button now hides the bottom menu properly.
+- **The chat message box** was not using the full width of the screen.
+</Update>
+
+<Update label="9 September 2026" tags={["Pricing"]}>
+## Ministry is now $60
+
+Down from $80, as an early bird price.
+
+<Note>
+  If you join at the early bird price, you stay at it. Raising the price later applies to new subscriptions only.
+</Note>
+</Update>
+
+<Update label="9 September 2026" tags={["Services"]}>
+## Volunteers get their invitations by email
+
+Rota invitations used to depend on your church connecting a Google account, which meant clicking past a security warning to use a feature.
+
+**Now:** invitations, reminders and unfilled-slot warnings go out by email from Harvest, on every plan. The email shows your church's name as the sender, and volunteers accept with one tap — no account needed.
+</Update>
+
+<Update label="9 September 2026" tags={["Design"]}>
+## One theme, and a darker dark mode
+
+We had two colour families running side by side. That is gone — there is now one, with a light and a dark mode.
+
+Dark mode is a deeper neutral grey than before, and the dividing lines between rows are far dimmer. They were reading as bright white on a dark screen.
+</Update>
+
+<Update label="9 September 2026" tags={["Fixed"]}>
+## Lists no longer quietly show you part of the truth
+
+Some screens loaded a slice of your data and presented it as everything — a church with 600 contacts saw 500 and no indication the rest existed.
+
+**Now:** where a list is incomplete, it says so on screen, and the counts above it are exact.
+
+The admin course screen and the member course page also disagreed with each other about how many library courses existed. They now read the same list.
+</Update>
+
+<Update label="9 September 2026" tags={["Navigation"]}>
+## Broadcasting is now Reach, and Forms moved into it
+
+The mobile menu and the desktop sidebar had drifted apart — different group names, different order. They now match.
+</Update>
+
+<Update label="8 September 2026" tags={["Navigation"]}>
+## A new sidebar
+
+The desktop sidebar was a single column of every screen in Harvest, scrolling. It is now a narrow rail of categories — hover or click one and its section opens beside it, full height.
+
+Only one panel opens at a time, and clicking pins it open.
+</Update>
+
+<Update label="8 September 2026" tags={["Fixed"]}>
+## The map stopped working, quietly
+
+Our map provider changed their terms and began stamping **API KEY REQUIRED** across every tile instead of returning an error. Nothing broke loudly, so nothing alerted us.
+
+**Fixed** — the map now uses OpenStreetMap, which needs no key, with their attribution shown as their licence requires.
+</Update>
+
+<Update label="8 September 2026" tags={["Accounts", "Fixed"]}>
+## Creating an account failed at the last step
+
+New sign-ups hit an error on the final onboarding screen and could not finish.
+
+**Fixed**, and the underlying cause — a failed save that said nothing — now shows the person what went wrong.
+</Update>
+
+<Update label="7 September 2026" tags={["Services"]}>
+## A service no longer needs an event first
+
+Planning a Sunday used to mean creating an event and then attaching a service to it. Most churches do not advertise their weekly service as an event, so this was backwards.
+
+**Now:** create a service directly, with its own date. Attaching it to an event is optional, for when you want to advertise it publicly too.
+</Update>
+
+<Update label="6 September 2026" tags={["Dashboard"]}>
+## Your dashboard says what changed, in words
+
+The insights under your numbers used to show database paths. They now read like sentences — *"Nobody has given for four weeks running"* — and compare against your own previous weeks rather than anything else.
+</Update>
+
+<Update label="6 September 2026" tags={["Services"]}>
+## Service planning, in full
+
+Three parts landed together:
+
+- **The order of service** — a run sheet with lengths, so moving one item shifts the clock times after it. Save a weekly service as a template.
+- **Volunteer rotas across weeks** — see the month at once, with a warning when you put the same person in two places.
+- **Invitations** — volunteers accept or decline from an email link, with reminders and a flag on any slot nobody has taken.
+
+Service planning also moved out from under Events into its own section, and the Library screen — which existed but had no way to reach it — is now in the menu.
+</Update>
+
+<Update label="6 September 2026" tags={["Events"]}>
+## A month view for events
+
+Events now has a calendar as well as a list.
+</Update>
+
+<Update label="5 September 2026" tags={["Fixed"]}>
+## Editing your profile could fail without telling you
+
+Saving your personal information could fail silently — the dialog closed, nothing was saved, and nothing said so.
+
+**Fixed.** A failed save now shows the error, keeps the dialog open and keeps what you typed.
+</Update>
+
+<Update label="4 September 2026" tags={["Forms", "Fixed"]}>
+## Forms
+
+- **Form responses were counted from the wrong place**, so a form with real submissions could show zero. Fixed.
+- **Options could not be added** to a multiple-choice field in the builder. Fixed.
+- **A per-question view** now shows every answer to one question at a time, over a complete read of the responses.
+</Update>
+
+<Update label="4 September 2026" tags={["Giving", "Dashboard"]}>
+## The Giving tab, and a public giving page
+
+Your dashboard's Giving tab now reads your ledger, your campaigns and your pledges.
+
+The giving page is also public, so you can share it with people who are not members — by link, by the phone's own share sheet, or as a QR code for the back of the room.
+</Update>
+
+<Update label="4 September 2026" tags={["Fixed"]}>
+## The bottom of the screen on a phone
+
+On phones with a home indicator, the bottom menu sat under it and dialogs opened behind it.
+
+**Fixed** — the menu reserves the space it needs, and dialogs and sheets open above it.
+</Update>
+
+<Update label="3 September 2026" tags={["Dashboard"]}>
+## A dashboard worth opening
+
+The dashboard became tabbed — **Overview**, **Growth**, **Giving**, **Engagement** and **Content** — with a member trend, a countries table, and real figures for who is actually using your courses and reading your articles.
+</Update>
+
+<Update label="3 September 2026" tags={["Content"]}>
+## A proper editor toolbar, and folders for notes
+
+Notes, courses and the blog share one editor, and it now has a toolbar that stays put instead of appearing only when you select text.
+
+Notes also got a folder tree you can see all at once, rather than clicking down into one folder at a time.
+</Update>
+
+<Update label="3 September 2026" tags={["Courses"]}>
+## Smaller things
+
+- **Courses** show a status badge, and the button changes with the status rather than always saying the same thing.
+- **Deleting a check-in session** now removes its attendee records too, instead of leaving them orphaned.
+- **Signups** moved out of the analytics screen onto its own page.
+</Update>
+
+<Update label="1 September 2026" tags={["Courses", "Fixed"]}>
+## Dragging lessons to reorder them
+
+Reordering worked at the top level but not inside a section. Fixed at both depths.
+</Update>
