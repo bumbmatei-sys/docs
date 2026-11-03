@@ -3,104 +3,6 @@ title: "What's new"
 description: "Everything we have shipped, newest first."
 ---
 
-<Update label="18 September 2026" tags={["Plans"]}>
-  ## Campuses are unlimited on every paid plan
-
-  The campus add-on is gone. Individual, Small Team and Ministry can each add as many locations as they need. Forever Free still has none — it is one evangelist, not a multi-site church.
-
-  Contact caps moved at the same time, and the old Contacts +500 pack went with the campus pack:
-
-  - Individual: 150 → **500** (same cap as Forever Free)
-  - Small Team: 500 → **2,000**
-  - Ministry: 2,000 → **4,000**
-
-  Unlimited contacts remains an add-on, Ministry only. Extra admin seats still stack. Ask Harvest is still an add-on, on any paid plan — it is not included in Ministry.
-</Update>
-
-<Update label="15 September 2026" tags={["Design","Fixed"]}>
-  ## Your logo disappeared on the dark theme
-
-  Ten screens show your church's logo. Only two of them handled a dark background — so on the other eight, a church with a dark-ink logo showed almost nothing.
-
-  Seven of those eight were the pages your congregation and the public actually see: giving, pledges, campaigns, event registration, check-in, forms and the calendar. **None of them forces light mode**, so a visitor with dark mode switched on saw a near-black logo on a near-black page.
-
-  **Fixed.** Every surface now puts a subtle plate behind an uploaded logo when the page is dark, and paints nothing at all in light mode.
-</Update>
-
-<Update label="15 September 2026" tags={["Forms"]}>
-  ## Rating and scale questions on forms
-
-  You can now ask "how would you rate this, 1 to 5" — as stars, or as a numbered scale.
-
-  <Note>
-    An unanswered rating exports as **empty**, never as zero. A zero is a rating, and averaging a column of accidental zeroes is how a survey ends up looking far worse than it was.
-  </Note>
-
-  Answers export as numbers, so a column can be averaged or charted without anyone converting "4 stars" back into a 4.
-</Update>
-
-<Update label="15 September 2026" tags={["Plans","Fixed"]}>
-  ## Adding a second campus told you to buy the wrong thing
-
-  A church at its campus limit was told to upgrade to Ministry. **Ministry does not include a second campus** — every plan includes exactly one, and extra campuses are an add-on on every tier. So the advice pointed at a purchase that would not have helped.
-
-  The button was also unpressable on a phone, so on touch nothing happened at all.
-
-  **Both fixed.** The message now names the actual cost and offers the add-on.
-</Update>
-
-<Update label="15 September 2026" tags={["Fixed"]}>
-  ## Your profile photo, and a button that flickered
-
-  - **The header showed your initial instead of your photo.** There are two places a photo can live, and the header was reading the wrong one. It looked intermittent because signing in with Google filled both — but anyone who uploaded a photo directly saw a letter forever.
-  - **The Automate button on the blog appeared, vanished and came back** while your plan was still loading. A plan that has not loaded yet is not the same as a plan that does not include something, and Harvest was treating it as a refusal.
-</Update>
-
-<Update label="14 September 2026" tags={["Giving","Fixed"]}>
-  ## A \$50 gift was showing as \$5,000
-
-  Three charts on your dashboard multiplied every giving figure by a hundred — Giving & growth, Giving over time, and the Giving mix tooltip. The legend beside that last one showed the right number, two elements away from the wrong one.
-
-  **Fixed.** Every money figure on the dashboard now reads correctly.
-</Update>
-
-<Update label="14 September 2026" tags={["Accounting","Fixed"]}>
-  ## Two screens were telling you something untrue about your own money
-
-  Accounting and Giving statements both said that a gift you record in the CRM does not count towards their totals and will not reach a member's statement.
-
-  **That has been false since we made manual recording write a real receipt.** Three other screens in Harvest already said it counts. These two said the opposite, and nobody noticed.
-
-  **Both now say what actually happens:** a gift you record by hand reaches your accounting, your dashboard and that member's year-end statement, exactly like a card gift.
-
-  <Warning>
-    Proving that turned up something nobody knew: **a gift recorded against a contact with no email address can never appear on a giving statement.** Statements are grouped by email, so there is nobody to group it under — it is skipped.
-
-    It still counts in your books. Both screens now say so, and it is worth an audit before you tell your congregation their statements are ready.
-  </Warning>
-</Update>
-
-<Update label="14 September 2026" tags={["CRM","Fixed"]}>
-  ## Deleting a contact did nothing
-
-  A contact you deleted came straight back on the next refresh. The delete was aiming at the wrong record entirely for anyone who had a Harvest account, so it was quietly writing to a document that had never existed.
-
-  **Fixed** — and while we were there:
-
-  - **Deleting a contact now removes their activity timeline too**, instead of leaving it behind with nothing to attach to.
-  - **Your receipts are never deleted.** Accounting and giving statements do not move when a contact goes.
-  - **An admin can no longer delete their own account**, which previously had no guard at all. You could have locked yourself out of a church you were the only admin of.
-  - **A failed delete now says so** instead of closing the dialog as though it had worked.
-
-  The confirmation dialog also explains what deleting actually reaches, rather than only warning that it cannot be undone.
-</Update>
-
-<Update label="14 September 2026" tags={["Livestream","Fixed"]}>
-  ## The support button during a livestream went nowhere
-
-  It opened a second tab onto your app's home page. **Now it goes to your giving page**, and it is hidden entirely if you do not have one.
-</Update>
-
 <Update label="3 November 2026" tags={["Fixed","Products","Navigation"]}>
   ## Social access fixed and a tidier sidebar
 
@@ -252,42 +154,102 @@ description: "Everything we have shipped, newest first."
   Ministry is back to \$80/month, and the early-bird label is gone.
 </Update>
 
-<Update label="17 September 2026" tags={["Pricing"]}>
-  ## Bigger contact limits and unlimited campuses
+<Update label="18 September 2026" tags={["Plans"]}>
+  ## Campuses are unlimited on every paid plan
 
-  - **Contact limits raised.** Individual 500 (was 150), Small Team 2,000 (was 500) and Ministry 4,000 (was 2,000). Free stays at 500.
-  - **Unlimited campuses** on every paid plan. The campus and contact-pack add-ons are retired.
+  The campus add-on is gone. Individual, Small Team and Ministry can each add as many locations as they need. Forever Free still has none — it is one evangelist, not a multi-site church.
+
+  Contact caps moved at the same time, and the old Contacts +500 pack went with the campus pack:
+
+  - Individual: 150 → **500** (same cap as Forever Free)
+  - Small Team: 500 → **2,000**
+  - Ministry: 2,000 → **4,000**
+
+  Unlimited contacts remains an add-on, Ministry only. Extra admin seats still stack. Ask Harvest is still an add-on, on any paid plan — it is not included in Ministry.
 </Update>
 
-<Update label="16 September 2026" tags={["CRM","Giving"]}>
-  ## Deleting timeline activity
+<Update label="15 September 2026" tags={["Design","Fixed"]}>
+  ## Your logo disappeared on the dark theme
 
-  - **Contact timelines.** You can now delete a single activity. Deleting a recorded gift shows exactly what changes — dashboard, accounting, the member's giving history and future statements — before you confirm.
-  - **Help links.** Giving screens link to the matching help page.
+  Ten screens show your church's logo. Only two of them handled a dark background — so on the other eight, a church with a dark-ink logo showed almost nothing.
+
+  Seven of those eight were the pages your congregation and the public actually see: giving, pledges, campaigns, event registration, check-in, forms and the calendar. **None of them forces light mode**, so a visitor with dark mode switched on saw a near-black logo on a near-black page.
+
+  **Fixed.** Every surface now puts a subtle plate behind an uploaded logo when the page is dark, and paints nothing at all in light mode.
 </Update>
 
-<Update label="15 September 2026" tags={["Fixed","Forms","Design"]}>
-  ## Form question types and calmer buttons
+<Update label="15 September 2026" tags={["Forms"]}>
+  ## Rating and scale questions on forms
 
-  - **Fixed.** Plan-based buttons no longer flash "not on your plan" while your plan is still loading; a placeholder shows instead.
-  - **Your profile photo.** The header now shows the photo you uploaded.
-  - **Forms.** New Rating (1–5 stars) and Scale (1–10) question types. Unanswered ratings export as empty, not zero.
-  - **Your church logo** sits on a backing plate on public pages so it stays visible on any background.
+  You can now ask "how would you rate this, 1 to 5" — as stars, or as a numbered scale.
+
+  <Note>
+    An unanswered rating exports as **empty**, never as zero. A zero is a rating, and averaging a column of accidental zeroes is how a survey ends up looking far worse than it was.
+  </Note>
+
+  Answers export as numbers, so a column can be averaged or charted without anyone converting "4 stars" back into a 4.
 </Update>
 
-<Update label="14 September 2026" tags={["Fixed","Giving","Events"]}>
-  ## Giving and event fixes
+<Update label="15 September 2026" tags={["Plans","Fixed"]}>
+  ## Adding a second campus told you to buy the wrong thing
 
-  - **Fixed.** Giving charts on the dashboard showed a \$50 gift as \$5,000.
-  - **Fixed.** Deleting a CRM person who was an app member (or yourself) did nothing.
-  - **Livestream support button** now opens the giving/partner tab inside the app instead of a new tab.
-  - **Paid events.** The ticket QR code only appears once payment is confirmed, a confirmed payment shows in the person's CRM activity, wording uses your church's name, and we removed the promise that nobody gets turned away at the door. Check-in itself still never blocks on payment.
+  A church at its campus limit was told to upgrade to Ministry. **Ministry does not include a second campus** — every plan includes exactly one, and extra campuses are an add-on on every tier. So the advice pointed at a purchase that would not have helped.
+
+  The button was also unpressable on a phone, so on touch nothing happened at all.
+
+  **Both fixed.** The message now names the actual cost and offers the add-on.
 </Update>
 
-<Update label="12 September 2026" tags={["Accounts","Navigation"]}>
-  ## Documentation link
+<Update label="15 September 2026" tags={["Fixed"]}>
+  ## Your profile photo, and a button that flickered
 
-  A Documentation link now sits under Billing in your account menu.
+  - **The header showed your initial instead of your photo.** There are two places a photo can live, and the header was reading the wrong one. It looked intermittent because signing in with Google filled both — but anyone who uploaded a photo directly saw a letter forever.
+  - **The Automate button on the blog appeared, vanished and came back** while your plan was still loading. A plan that has not loaded yet is not the same as a plan that does not include something, and Harvest was treating it as a refusal.
+</Update>
+
+<Update label="14 September 2026" tags={["Giving","Fixed"]}>
+  ## A \$50 gift was showing as \$5,000
+
+  Three charts on your dashboard multiplied every giving figure by a hundred — Giving & growth, Giving over time, and the Giving mix tooltip. The legend beside that last one showed the right number, two elements away from the wrong one.
+
+  **Fixed.** Every money figure on the dashboard now reads correctly.
+</Update>
+
+<Update label="14 September 2026" tags={["Accounting","Fixed"]}>
+  ## Two screens were telling you something untrue about your own money
+
+  Accounting and Giving statements both said that a gift you record in the CRM does not count towards their totals and will not reach a member's statement.
+
+  **That has been false since we made manual recording write a real receipt.** Three other screens in Harvest already said it counts. These two said the opposite, and nobody noticed.
+
+  **Both now say what actually happens:** a gift you record by hand reaches your accounting, your dashboard and that member's year-end statement, exactly like a card gift.
+
+  <Warning>
+    Proving that turned up something nobody knew: **a gift recorded against a contact with no email address can never appear on a giving statement.** Statements are grouped by email, so there is nobody to group it under — it is skipped.
+
+    It still counts in your books. Both screens now say so, and it is worth an audit before you tell your congregation their statements are ready.
+  </Warning>
+</Update>
+
+<Update label="14 September 2026" tags={["CRM","Fixed"]}>
+  ## Deleting a contact did nothing
+
+  A contact you deleted came straight back on the next refresh. The delete was aiming at the wrong record entirely for anyone who had a Harvest account, so it was quietly writing to a document that had never existed.
+
+  **Fixed** — and while we were there:
+
+  - **Deleting a contact now removes their activity timeline too**, instead of leaving it behind with nothing to attach to.
+  - **Your receipts are never deleted.** Accounting and giving statements do not move when a contact goes.
+  - **An admin can no longer delete their own account**, which previously had no guard at all. You could have locked yourself out of a church you were the only admin of.
+  - **A failed delete now says so** instead of closing the dialog as though it had worked.
+
+  The confirmation dialog also explains what deleting actually reaches, rather than only warning that it cannot be undone.
+</Update>
+
+<Update label="14 September 2026" tags={["Livestream","Fixed"]}>
+  ## The support button during a livestream went nowhere
+
+  It opened a second tab onto your app's home page. **Now it goes to your giving page**, and it is hidden entirely if you do not have one.
 </Update>
 
 <Update label="11 September 2026" tags={["Events", "Giving"]}>
